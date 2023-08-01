@@ -1,0 +1,105 @@
+$white: #ffffff;
+$light-blue: #abcdef;
+$white-smoke: #f5f5f5;
+$transparent-black: rgba(0, 0, 0, 0.5);
+$lavender: #e6e6fa;
+$black: #000000;
+
+@mixin julius-sans-one-40-regular {
+  font-family: "Julius Sans One";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@mixin julius-sans-one-96-regular {
+  font-family: "Julius Sans One";
+  font-size: 96px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main {
+  background-color: $white;
+  padding: 100px 100px 100px 100px;
+  position: relative;
+}
+
+.flexWrapperOne {
+  background: linear-gradient(322deg, $light-blue 2%, $white-smoke 100%);
+  border-radius: 20px;
+  padding: 50px 50px 50px 50px;
+  box-shadow: 0 0 10px 2px $transparent-black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  border: 3px solid $lavender;
+}
+
+.toDoList {
+  margin-bottom: 32px;
+  align-items: center;
+  color: $black;
+  @include julius-sans-one-40-regular;
+  
+  & .toDoListEmphasis0 {
+    font-family: "Julius Sans One";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: normal;
+    color: $black;
+    letter-spacing: 0.4px;
+  }
+}
+
+.inputRec {
+  width: 548px;
+  height: 62px;
+  margin-bottom: 21px;
+  box-shadow: 0 0 10px 1px $transparent-black;
+  font-family: "Julius Sans One";
+  border-radius: 10px;
+}
+
+.idRec {
+  width: 548px;
+  height: 62px;
+  margin-bottom: 21px;
+  box-shadow: 0 0 10px 1px $transparent-black;
+  border-radius: 10px;
+}
+
+.listRec {
+  background : white;
+  width: 548px;
+  height: 609px;
+  box-shadow: 0 0 10px 1px $transparent-black;
+  border-radius: 10px;
+  font-family: "Julius Sans One";
+}
+
+.addButton{
+  font-family: "Julius Sans One";
+  background : white;
+  box-shadow: 0 0 10px 1px $transparent-black;
+  font-size : 15px;
+
+}
+
+.TodoItem {
+  font-family: "Julius Sans One";
+  font-size : 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.someClassName {
+  color: $black;
+  position: absolute;
+  right: 350px;
+  top: 62px;
+  letter-spacing: 0.96px;
+}
